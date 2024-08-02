@@ -110,6 +110,7 @@ def evaluate(model, test_loader, config, round_vals=True, round_precision=3):
 
 def main(config):
     model = build_model(config)
+    print(config)
     test_loader = DepthDataLoader(config, 'online_eval').data
     model = model.cuda()
     metrics = evaluate(model, test_loader, config)
