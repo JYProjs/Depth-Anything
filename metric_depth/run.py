@@ -9,7 +9,7 @@ import torchvision.transforms as transforms
 from tqdm import tqdm
 from zoedepth.models.builder import build_model
 from zoedepth.utils.config import get_config
-import cv2
+# import cv2
 
 # Global settings
 FL = 3263.5
